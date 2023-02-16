@@ -15,7 +15,7 @@ const Header = (props) => {
             <Link href='/' className="headerItem">
                 <div>Swap</div>
             </Link>
-            <Link href='/token' className="headerItem">
+            <Link href='/routes/token' className="headerItem">
                 <div >Tokens</div>
             </Link>
         </div>

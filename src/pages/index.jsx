@@ -1,19 +1,15 @@
 import Head from 'next/head'
-import '@/styles/Home.module.css'
-
+import Swap from './routes/Swap'
 import { Inter } from '@next/font/google'
-import Header from '@/components/Header'
 import { useConnect, useAccount } from "wagmi";
-import { MetaMaskConnector } from "wagmi/connectors/metaMask";
+
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
   const { address, isConnected } = useAccount();
-  const { connect } = useConnect({
-    connector: new MetaMaskConnector(),
-  });
 
   return (
     <>
@@ -24,13 +20,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         {/* <link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet"></link> */}
       </Head>
-      <main>
-      <Header connect={connect} isConnected={isConnected} address={address}  />
-        <div>
-          
-            main
-
-        </div>
+      <main className='mainWindow'>
+        <Swap isConnected={isConnected} address={address} />
       </main>
     </>
   )

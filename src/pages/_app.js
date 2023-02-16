@@ -1,4 +1,5 @@
 import '@/styles/globals.css'
+import Layout from '@/components/Layer';
 import { configureChains, mainnet, WagmiConfig,goerli, createClient } from "wagmi";
 import { publicProvider } from "wagmi/providers/public";
 
@@ -16,6 +17,8 @@ const client = createClient({
 export default function App({ Component, pageProps }) {
   return (
       <WagmiConfig client={client}>
-        <Component {...pageProps} />
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
       </WagmiConfig> 
 )}
