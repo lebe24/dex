@@ -4,7 +4,7 @@ import { configureChains, mainnet, WagmiConfig,goerli, createClient } from "wagm
 import { publicProvider } from "wagmi/providers/public";
 
 const { provider, webSocketProvider } = configureChains(
-  [goerli],
+  [goerli,mainnet],
   [publicProvider()]
 );
 

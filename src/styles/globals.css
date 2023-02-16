@@ -142,35 +142,38 @@ header {
 .assetOne {
   position: absolute;
   min-width: 50px;
-  height: 30px;
-  background-color: #3a4157;
+  height: 40px;
+  background-color: #0b0b0c;
   top: 36px;
   right: 20px;
-  border-radius: 100px;
+  border: 1px solid white;
+  border-radius: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 5px;
   font-weight: bold;
   font-size: 17px;
-  padding-right: 8px;
+  padding: 10px;
 }
 
 .assetTwo {
   position: absolute;
   min-width: 50px;
-  height: 30px;
-  background-color: #3a4157;
+  height: 40px;
+  background-color: #0b0b0c;
   top: 135px;
   right: 20px;
-  border-radius: 100px;
+  border: 1px solid white;
+  border-radius: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 5px;
   font-weight: bold;
   font-size: 17px;
-  padding-right: 8px;
+  padding: 10px;
+  transition: 0.4s ease-in;
 }
 
 .tradeBoxHeader {
@@ -248,4 +251,77 @@ header {
   border: 3px solid #0E111B;
   font-size: 12px;
   transition: 0.3s
+}
+
+.swapButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #243056; 
+  width: calc(100%);
+  height: 55px;
+  font-size: 20px;
+  border-radius: 12px;
+  color: #5981F3;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-bottom: 30px;
+  margin-top: 8px;
+}
+
+.swapButton[disabled] {
+  background-color: #243056;
+  opacity: 0.4;
+  color: #5982f39b;
+}
+
+.swapButton[disabled]:hover {
+  cursor: not-allowed;
+  background-color: #243056;
+}
+
+.swapButton:hover {
+  cursor: pointer;
+  background-color: #3b4874
+}
+
+.tokenLogo {
+  height: 40px;
+  width: 40px;
+}
+
+.modalContent {
+  border-top: 1px solid #363e54;
+  /* padding-top: 20px; */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+.tokenChoice {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.tokenChoice:hover {
+  cursor: pointer;
+  background-color: #1f2639;
+}
+
+.tokenName {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tokenTicker {
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #51596f;
 }
