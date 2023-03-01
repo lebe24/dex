@@ -5,3 +5,9 @@ A Decentralised Exchange built with Nextjs and utilises the moralis api to fetch
 ![Dex](public/Dex.png)
 
 check it out [Dex](https://dex-eight-psi.vercel.app/)
+
+## stack
+- Moralis
+- Nextjs
+- antd
+- wagmi
