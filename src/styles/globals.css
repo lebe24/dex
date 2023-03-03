@@ -197,6 +197,17 @@ header {
   margin-left: 5px;
 }
 
+.cog {
+  color: #51586f;
+  transition: 0.3s;
+}
+
+.cog:hover {
+  color: white;
+  rotate: 90deg;
+  cursor: pointer;
+}
+
 
 .ant-input {
   background-color: #1f2639 !important;
